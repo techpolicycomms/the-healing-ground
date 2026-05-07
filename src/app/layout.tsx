@@ -1,0 +1,46 @@
+import type { Metadata } from "next";
+import { ClerkProvider } from "@clerk/nextjs";
+import { AnalyticsProvider } from "@/components/analytics/posthog-provider";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://www.thehealinggroundgeneva.com"),
+  title: {
+    default: "The Healing Ground Geneva | Trauma-Informed Coaching",
+    template: "%s | The Healing Ground Geneva"
+  },
+  description:
+    "Trauma-informed coaching in Geneva for stress, burnout, nervous system dysregulation, emotional overwhelm, and persistent stress-related symptoms.",
+  icons: {
+    icon: "/favicon.svg"
+  },
+  openGraph: {
+    title: "The Healing Ground Geneva",
+    description:
+      "Come home to your body with trauma-informed coaching for stress, burnout, and nervous system support.",
+    url: "https://www.thehealinggroundgeneva.com",
+    siteName: "The Healing Ground Geneva",
+    locale: "en_GB",
+    type: "website"
+  }
+};
+
+export default function RootLayout({
+  children
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  const app = <AnalyticsProvider>{children}</AnalyticsProvider>;
+
+  return (
+    <html lang="en-GB">
+      <body>
+        {process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY ? (
+          <ClerkProvider>{app}</ClerkProvider>
+        ) : (
+          app
+        )}
+      </body>
+    </html>
+  );
+}
