@@ -39,9 +39,9 @@ export default function HomePage() {
                 <em className="font-serif italic text-olive">safety</em>.
               </h1>
               <p className="mt-7 max-w-2xl text-lg leading-8 text-ink/72 sm:text-xl text-pretty">
-                A grounded, mind-body space for people who are tired of surviving
-                — and ready to reconnect with themselves. Trauma-informed,
-                evidence-aware, gentle by design.
+                A grounded, naturopathic and mind-body space for people who are
+                tired of surviving — and ready to reconnect with themselves.
+                Gentle, evidence-aware, and complementary to medical care.
               </p>
               <div className="mt-8 flex flex-wrap gap-3 text-sm text-ink/70">
                 <span className="inline-flex min-h-10 items-center gap-2 rounded-full border border-stone/20 bg-ivory/75 px-4">
@@ -122,8 +122,8 @@ export default function HomePage() {
                 and keep moving.
               </p>
               <p>
-                The Healing Ground Geneva offers trauma-informed, holistic
-                mind-body practice with Celia de Mestral for people who want to
+                The Healing Ground Geneva is the holistic, naturopathic and
+                mind-body practice of Celia de Mestral — for people who want to
                 understand their stress responses without shame and rebuild a
                 steadier relationship with their body, emotions, work, and life
                 in Geneva.
@@ -242,9 +242,9 @@ export default function HomePage() {
                   that respects complexity.
                 </p>
                 <p>
-                  Her approach is trauma-informed, culturally sensitive, and
-                  carefully paced. It is especially attuned to internationally
-                  mobile adults, expats, diplomats, NGO workers, and people in
+                  Her approach is grounded, culturally sensitive, and carefully
+                  paced. It is especially attuned to internationally mobile
+                  adults, expats, diplomats, NGO workers, and people in
                   demanding professional environments who may be carrying more
                   than they show.
                 </p>

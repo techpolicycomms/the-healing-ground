@@ -35,7 +35,7 @@ export default function MedicalDisclaimerPage() {
               On scope, boundaries, and honesty.
             </h1>
             <p className="mt-7 max-w-2xl text-lg leading-8 text-ink/72">
-              The Healing Ground Geneva offers trauma-informed, holistic mind-body practice and
+              The Healing Ground Geneva offers holistic, naturopathic mind-body practice and
               educational support. This page explains, plainly, what that means —
               and what it does not.
             </p>

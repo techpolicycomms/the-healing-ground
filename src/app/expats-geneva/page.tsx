@@ -7,7 +7,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "For Expats in Geneva",
   description:
-    "Trauma-informed, holistic mind-body support for expats in Geneva — UN professionals, NGO workers, diplomats, and internationally mobile adults experiencing stress or burnout."
+    "Holistic, naturopathic mind-body support for expats in Geneva — UN professionals, NGO workers, diplomats, and internationally mobile adults experiencing stress or burnout."
 };
 
 const groups = [

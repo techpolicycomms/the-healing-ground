@@ -41,7 +41,7 @@ export const navItems = [
 ];
 
 export const trustSignals = [
-  "Trauma-informed and consent-led",
+  "Holistic, consent-led, and gentle",
   "English, French, and Spanish welcome",
   "Geneva-based, internationally aware",
   "Holistic support, complementary to medical care"
@@ -93,7 +93,7 @@ export const servicePages = {
   "/burnout-support": {
     title: "Burnout Support in Geneva",
     meta:
-      "Trauma-informed, holistic burnout support in Geneva for expats, UN professionals, NGO workers, diplomats, and emotionally exhausted high achievers.",
+      "Holistic, naturopathic burnout support in Geneva for expats, UN professionals, NGO workers, diplomats, and emotionally exhausted high achievers.",
     eyebrow: "Burnout support",
     headline: "When achievement has cost more than you expected.",
     intro:
@@ -124,7 +124,7 @@ export const servicePages = {
   "/nervous-system-regulation": {
     title: "Nervous System Regulation Geneva",
     meta:
-      "Trauma-informed support in Geneva for chronic stress, emotional overwhelm, freeze, hypervigilance, and sensitive professionals.",
+      "Holistic, mind-body support in Geneva for chronic stress, emotional overwhelm, freeze, hypervigilance, and sensitive professionals.",
     eyebrow: "Nervous system regulation",
     headline: "Your body is not overreacting. It is trying to protect you.",
     intro:
@@ -267,7 +267,7 @@ export const workshopIdeas = [
 ];
 
 export const legalDisclaimers = [
-  "The Healing Ground Geneva offers trauma-informed, holistic support — not medical diagnosis, psychotherapy, emergency mental-health care, or medical treatment.",
+  "The Healing Ground Geneva offers holistic, mind-body support — not medical diagnosis, psychotherapy, emergency mental-health care, or medical treatment.",
   "Information on this website is general and should not replace advice from qualified healthcare or mental-health professionals.",
   "If you are in crisis or feel unsafe, contact Swiss emergency services (144) or La Main Tendue (143) immediately.",
   "Client information is handled confidentially and in alignment with applicable Swiss data-protection expectations."

@@ -8,7 +8,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contact The Healing Ground Geneva for trauma-informed, holistic mind-body practice, workshops, discovery calls, and expat wellbeing support in Geneva."
+    "Contact The Healing Ground Geneva for holistic, mind-body consultations, workshops, discovery calls, and expat wellbeing support in Geneva."
 };
 
 export default function ContactPage() {

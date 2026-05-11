@@ -10,7 +10,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About Celia de Mestral",
   description:
-    "Meet Celia de Mestral, founder of The Healing Ground Geneva, offering trauma-informed, holistic mind-body practice for stress, burnout, and nervous system support."
+    "Meet Celia de Mestral, founder of The Healing Ground Geneva — holistic, naturopathic, and mind-body practice for stress, burnout, and nervous system support."
 };
 
 export default function AboutPage() {
@@ -37,11 +37,12 @@ export default function AboutPage() {
                   bodies and emotions are asking for something gentler.
                 </p>
                 <p>
-                  Her work is trauma-informed, culturally sensitive, and
-                  grounded in deep listening. She supports stress, burnout,
-                  nervous system dysregulation, emotional overwhelm, and the
-                  stress-related symptoms that often accompany long periods of
-                  pressure.
+                  Trauma-informed care is one of several approaches that inform
+                  her work, alongside naturopathy, nutrition, phytotherapy,
+                  somatics, mindfulness, and nervous-system science. Together
+                  they support stress, burnout, nervous-system dysregulation,
+                  emotional overwhelm, and the stress-related symptoms that
+                  often accompany long periods of pressure.
                 </p>
                 <p>
                   The tone of the work is steady and humane: no fixing, no
@@ -68,7 +69,7 @@ export default function AboutPage() {
         <Section tone="mist">
           <div className="grid gap-8 lg:grid-cols-3">
             {[
-              ["Mission", "To help internationally minded adults rebuild safety, capacity, and self-trust through trauma-informed, holistic mind-body practice."],
+              ["Mission", "To help internationally minded adults rebuild safety, capacity, and self-trust through holistic, naturopathic, and mind-body practice."],
               ["Vision", "A Geneva wellness culture where sensitivity, stress, and burnout are met with nuance instead of shame."],
               ["Promise", "A grounded space where you can slow down, be heard, and make sense of your body without being pathologised."]
             ].map(([title, text]) => (

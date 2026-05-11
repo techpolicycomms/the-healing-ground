@@ -34,8 +34,8 @@ const isNot = [
   "A medical consultation, and does not replace one.",
   "Psychotherapy, and does not treat psychiatric conditions.",
   "A quick fix, a cleanse, or a protocol you complete and leave.",
-  "Spiritual performance, manifesting, or biohacking.",
-  "Pressure to be the “best version” of yourself."
+  "Spiritual performance or self-optimisation.",
+  "Pressure to become someone you are not."
 ];
 
 export default function ApproachPage() {

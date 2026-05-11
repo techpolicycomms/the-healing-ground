@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     template: "%s | The Healing Ground Geneva"
   },
   description:
-    "A grounded, trauma-informed, mind-body practice in Geneva for stress, burnout, nervous-system regulation, and persistent stress-related symptoms.",
+    "A grounded, holistic mind-body practice in Geneva for stress, burnout, nervous-system regulation, and persistent stress-related symptoms.",
   icons: {
     icon: "/favicon.svg"
   },

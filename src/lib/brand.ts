@@ -62,4 +62,4 @@ export const PHRASE_LIBRARY = [
 
 /** The mandatory boundary line that appears on every services / health page. */
 export const COMPLEMENTARY_LINE =
-  "Trauma-informed and complementary to medical care. Never a replacement for it.";
+  "Holistic and complementary to medical care. Never a replacement for it.";

@@ -8,7 +8,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Workshops",
   description:
-    "Calm, trauma-informed workshops in Geneva for nervous system education, burnout prevention, expat wellbeing, and emotionally intelligent teams."
+    "Calm, holistic workshops in Geneva for nervous system education, burnout prevention, expat wellbeing, and emotionally intelligent teams."
 };
 
 export default function WorkshopsPage() {
