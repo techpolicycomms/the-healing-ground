@@ -1,5 +1,6 @@
 import { PageShell } from "@/components/site/page-shell";
 import { Eyebrow, Section } from "@/components/site/section";
+import { NewsletterForm } from "@/components/newsletter-form";
 import { ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -33,21 +34,9 @@ export default function WorkshopsPage() {
 
             <div className="mt-10 rounded-[10px] border border-stone/15 bg-paper p-7 sm:p-8">
               <Eyebrow>Notify me when workshops open</Eyebrow>
-              <p className="mt-4 text-sm leading-7 text-ink/65">
-                {/* Newsletter form is wired in a separate commit; this placeholder
-                    matches the brief's content shape and links to the contact route
-                    as a graceful fallback. */}
-                Newsletter signup will live here. Until then, you can write to
-                Celia directly and she will add you to the quiet pre-list for
-                workshops.
-              </p>
-              <Link
-                href="/contact"
-                className="mt-6 inline-flex min-h-12 items-center gap-2 rounded-full bg-ink px-6 text-sm font-semibold text-ivory transition hover:bg-cedar"
-              >
-                Write to be added
-                <ArrowRight aria-hidden="true" size={17} />
-              </Link>
+              <div className="mt-5">
+                <NewsletterForm blurb="When a workshop is announced, the newsletter is the first place it appears — often with a quiet pre-list before public booking." />
+              </div>
             </div>
           </div>
         </Section>
