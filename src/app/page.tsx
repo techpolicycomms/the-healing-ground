@@ -1,6 +1,7 @@
 import { PageShell } from "@/components/site/page-shell";
 import { Eyebrow, Section } from "@/components/site/section";
 import { PullQuote } from "@/components/site/pull-quote";
+import { PhraseRotator } from "@/components/site/phrase-rotator";
 import { BrandGradient } from "@/components/site/brand-gradient";
 import { ContactForm } from "@/components/contact-form";
 import { approach, homeServices, site, trustSignals } from "@/lib/site-content";
@@ -280,22 +281,9 @@ export default function HomePage() {
         </Section>
 
         <Section tone="mist" className="py-24 lg:py-32">
-          <div className="mx-auto max-w-3xl text-center">
-            <Eyebrow>Phrases that feel true</Eyebrow>
-            <div className="mt-12 space-y-4">
-              <PullQuote>{site.taglines.en}</PullQuote>
-              <p className="pull-quote text-center text-ink-soft/80">
-                {site.taglines.fr}
-              </p>
-              <p className="pull-quote text-center text-ink-soft/60">
-                {site.taglines.es}
-              </p>
-            </div>
-            <hr className="hairline mx-auto my-16 max-w-[120px]" />
-            <div className="space-y-12">
-              <PullQuote>Your body is not working against you.</PullQuote>
-              <PullQuote>Rest is necessary, not selfish.</PullQuote>
-            </div>
+          <Eyebrow className="block text-center">A phrase, gently</Eyebrow>
+          <div className="mt-12">
+            <PhraseRotator />
           </div>
         </Section>
 
