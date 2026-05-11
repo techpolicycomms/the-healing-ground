@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 const formats = [
   {
-    title: "1:1 Coaching",
+    title: "1:1 Consultation",
     text: "A private container for stress, burnout, overwhelm, body awareness, and nervous-system capacity.",
     details: ["60-minute sessions", "Online or Geneva-based when available", "English with French or Spanish nuance where helpful"]
   },
@@ -36,7 +36,7 @@ export default function WorkWithMePage() {
           <div className="max-w-4xl">
             <Eyebrow>Work with me</Eyebrow>
             <h1 className="mt-5 font-serif text-[clamp(3rem,7vw,6rem)] font-semibold leading-[0.92]">
-              Coaching that respects your pace, your body, and your context.
+              Holistic consultations that respect your pace, your body, and your story.
             </h1>
             <p className="mt-7 max-w-2xl text-lg leading-8 text-ink/72 sm:text-xl">
               The work is structured enough to feel containing, spacious enough
