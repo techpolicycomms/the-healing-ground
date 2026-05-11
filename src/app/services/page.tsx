@@ -1,8 +1,10 @@
 import { PageShell } from "@/components/site/page-shell";
 import { Eyebrow, Section } from "@/components/site/section";
-import { ArrowRight, Check } from "lucide-react";
+import { PricingCard } from "@/components/site/pricing-card";
+import { ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
 import Link from "next/link";
+import services from "@/content/services.json";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -10,63 +12,90 @@ export const metadata: Metadata = {
     "Holistic, naturopathic, and mind-body consultations with Celia de Mestral. Geneva or online — English, French, Spanish."
 };
 
-const formats = [
-  {
-    title: "1:1 Consultation",
-    text: "A private container for stress, burnout, overwhelm, body awareness, and nervous-system capacity.",
-    details: ["60-minute sessions", "Online or Geneva-based when available", "English with French or Spanish nuance where helpful"]
-  },
-  {
-    title: "Short Support Arc",
-    text: "A focused series for people who need clarity, steadiness, and a less overwhelming way to begin.",
-    details: ["4-session structure", "Gentle intake and integration prompts", "Ideal after relocation, work pressure, or emotional depletion"]
-  },
-  {
-    title: "Workshops",
-    text: "Small-group and organisational formats for stress literacy, burnout prevention, and nervous-system education.",
-    details: ["Geneva community groups", "International organisations and NGOs", "Private retreat-style formats"]
-  }
-];
-
 export default function ServicesPage() {
   return (
     <PageShell>
       <main className="bg-ivory text-ink">
         <Section>
-          <div className="max-w-4xl">
-            <Eyebrow>Services & pricing</Eyebrow>
-            <h1 className="mt-5 font-serif text-[clamp(3rem,7vw,6rem)] font-semibold leading-[0.92]">
-              Holistic consultations that respect your pace, your body, and your story.
+          <div className="max-w-3xl">
+            <Eyebrow>Consultations · Geneva & online</Eyebrow>
+            <h1 className="mt-5 font-serif text-[clamp(2.6rem,5.5vw,4.8rem)] font-medium leading-[1.02] text-balance">
+              Working together.
             </h1>
-            <p className="mt-7 max-w-2xl text-lg leading-8 text-ink/72 sm:text-xl">
-              The work is structured enough to feel containing, spacious enough
-              to feel human, and honest enough to name when another form of care
-              would be more appropriate.
+            <p className="mt-7 max-w-2xl text-lg leading-8 text-ink/72 sm:text-xl text-pretty">
+              Sessions are unhurried by design. The first consultation is the
+              start of a relationship, not a transaction.
             </p>
           </div>
-          <div className="mt-12 grid gap-5 lg:grid-cols-3">
-            {formats.map((format) => (
-              <article key={format.title} className="rounded-[8px] border border-stone/15 bg-mist/55 p-6">
-                <h2 className="font-serif text-4xl font-semibold">{format.title}</h2>
-                <p className="mt-4 leading-7 text-ink/70">{format.text}</p>
-                <div className="mt-6 grid gap-3">
-                  {format.details.map((detail) => (
-                    <p key={detail} className="flex gap-3 text-sm leading-6 text-ink/72">
-                      <Check aria-hidden="true" className="mt-1 shrink-0 text-clay" size={16} />
-                      {detail}
-                    </p>
-                  ))}
-                </div>
-              </article>
-            ))}
+
+          <div className="mt-12 grid gap-6 lg:grid-cols-2">
+            <PricingCard
+              title={services.firstConsultation.title}
+              duration={services.firstConsultation.duration}
+              price={services.firstConsultation.price}
+              formats={services.firstConsultation.formats}
+              languages={services.firstConsultation.languages}
+              includes={services.firstConsultation.includes}
+              cta={{ href: "/book", label: "Book a first consultation" }}
+            />
+            <PricingCard
+              title={services.followUp.title}
+              duration={services.followUp.duration}
+              price={services.followUp.price}
+              formats={services.followUp.formats}
+              languages={services.followUp.languages}
+              blurb={services.followUp.blurb}
+              cta={{ href: "/book", label: "Book a follow-up" }}
+              variant="subdued"
+            />
           </div>
-          <Link
-            href="/discovery-call"
-            className="mt-10 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-ink px-7 text-sm font-semibold text-ivory transition hover:bg-cedar"
-          >
-            Start with a discovery call
-            <ArrowRight aria-hidden="true" size={18} />
-          </Link>
+
+          <div className="mt-8">
+            <PricingCard
+              title={services.shortSupportSeries.title}
+              blurb={services.shortSupportSeries.blurb}
+              pricingNote={services.shortSupportSeries.pricingNote}
+              tbd={services.shortSupportSeries.tbd}
+              cta={{ href: "/contact", label: "Ask about a series" }}
+              variant="subdued"
+            />
+          </div>
+
+          <div className="mt-12 rounded-[10px] border border-stone/15 bg-paper px-6 py-7 sm:px-8">
+            <Eyebrow>Workshops</Eyebrow>
+            <p className="mt-3 leading-7 text-ink/72">
+              Small-group and organisational formats — for Geneva community
+              groups, international organisations and NGOs, and private
+              retreat-style gatherings. New workshops are announced gently,
+              through the journal.
+            </p>
+            <Link
+              href="/workshops"
+              className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-olive underline-offset-[6px] hover:underline"
+            >
+              About workshops
+              <ArrowRight aria-hidden="true" size={16} />
+            </Link>
+          </div>
+        </Section>
+
+        <Section tone="mist">
+          <div className="mx-auto max-w-3xl rounded-[10px] border border-stone/15 bg-paper px-6 py-7 text-sm leading-7 text-ink/70 sm:px-8 sm:py-8">
+            <Eyebrow>A note on scope</Eyebrow>
+            <p className="mt-3">
+              Celia is not a medical doctor, psychologist, or psychiatrist. She
+              does not diagnose, treat, or prescribe medication. Her work is
+              complementary to medical care, never a replacement for it. Please
+              continue working with your physician on all medical matters.
+            </p>
+            <Link
+              href="/legal/medical-disclaimer"
+              className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-olive underline-offset-[6px] hover:underline"
+            >
+              Full medical disclaimer
+              <ArrowRight aria-hidden="true" size={16} />
+            </Link>
+          </div>
         </Section>
       </main>
     </PageShell>
