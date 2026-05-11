@@ -33,7 +33,7 @@ export const site = {
 
 export const navItems = [
   { label: "About", href: "/about" },
-  { label: "Work With Me", href: "/work-with-me" },
+  { label: "Services", href: "/services" },
   { label: "Expats", href: "/expats-geneva" },
   { label: "Workshops", href: "/workshops" },
   { label: "Journal", href: "/journal" }

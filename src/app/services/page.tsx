@@ -5,9 +5,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Work With Me",
+  title: "Services",
   description:
-    "Trauma-informed, holistic mind-body practice formats with Celia de Mestral for stress, burnout, nervous system regulation, and emotional overwhelm in Geneva."
+    "Holistic, naturopathic, and mind-body consultations with Celia de Mestral. Geneva or online — English, French, Spanish."
 };
 
 const formats = [
@@ -28,13 +28,13 @@ const formats = [
   }
 ];
 
-export default function WorkWithMePage() {
+export default function ServicesPage() {
   return (
     <PageShell>
       <main className="bg-ivory text-ink">
         <Section>
           <div className="max-w-4xl">
-            <Eyebrow>Work with me</Eyebrow>
+            <Eyebrow>Services & pricing</Eyebrow>
             <h1 className="mt-5 font-serif text-[clamp(3rem,7vw,6rem)] font-semibold leading-[0.92]">
               Holistic consultations that respect your pace, your body, and your story.
             </h1>

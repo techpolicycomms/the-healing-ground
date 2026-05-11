@@ -60,10 +60,10 @@ export default function HomePage() {
                   <ArrowRight aria-hidden="true" size={18} />
                 </Link>
                 <Link
-                  href="/work-with-me"
+                  href="/services"
                   className="inline-flex min-h-12 items-center justify-center rounded-full border border-stone/28 bg-ivory/80 px-7 text-sm font-semibold text-ink transition hover:bg-white"
                 >
-                  Explore the work
+                  See services & pricing
                 </Link>
               </div>
             </div>
