@@ -1,17 +1,12 @@
 import {
   Anchor,
-  BookOpen,
   BriefcaseBusiness,
   Compass,
   HeartHandshake,
-  Leaf,
   Mail,
   MapPin,
   MessageCircle,
-  Moon,
-  PenLine,
   ShieldCheck,
-  Sparkles,
   Waves
 } from "lucide-react";
 
@@ -257,14 +252,9 @@ export const contactCards = [
   }
 ];
 
-export const workshopIdeas = [
-  { icon: Moon, title: "The Gentle Reset", text: "A 90-minute nervous-system workshop for professionals moving through chronic stress." },
-  { icon: BriefcaseBusiness, title: "Burnout Without Shame", text: "A reflective workshop for high-functioning teams and mission-driven organisations." },
-  { icon: Leaf, title: "Coming Home to the Body", text: "A small-group experience for grounding, body awareness, and emotional steadiness." },
-  { icon: BookOpen, title: "The Expat Nervous System", text: "For internationally mobile adults navigating adaptation, identity, and belonging." },
-  { icon: PenLine, title: "Boundaries as Nervous System Care", text: "A practical session on limits, language, recovery, and relational safety." },
-  { icon: Sparkles, title: "Soft Landing", text: "A seasonal gathering for Geneva newcomers and emotionally aware expats." }
-];
+// workshopIdeas removed — those titles were invented during the v1 pass
+// and not specified by Celia. The workshops page now signals "coming gently"
+// honestly rather than listing fictional offerings.
 
 export const legalDisclaimers = [
   "The Healing Ground Geneva offers holistic, mind-body support — not medical diagnosis, psychotherapy, emergency mental-health care, or medical treatment.",
