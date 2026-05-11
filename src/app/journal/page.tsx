@@ -1,5 +1,6 @@
 import { PageShell } from "@/components/site/page-shell";
 import { Eyebrow, Section } from "@/components/site/section";
+import { NewsletterForm } from "@/components/newsletter-form";
 import { journalIdeas } from "@/lib/site-content";
 import type { Metadata } from "next";
 
@@ -30,6 +31,18 @@ export default function JournalPage() {
                 <p className="text-sm font-semibold leading-6">{idea}</p>
               </article>
             ))}
+          </div>
+        </Section>
+
+        <Section tone="mist">
+          <div className="mx-auto max-w-3xl">
+            <Eyebrow>A gentle letter</Eyebrow>
+            <h2 className="mt-4 font-serif text-[clamp(2rem,4vw,3rem)] font-medium leading-tight text-balance">
+              When a piece is published, it arrives quietly.
+            </h2>
+            <div className="mt-8">
+              <NewsletterForm />
+            </div>
           </div>
         </Section>
       </main>

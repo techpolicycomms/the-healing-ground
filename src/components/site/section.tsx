@@ -24,12 +24,21 @@ export function Section({ children, className, id, tone = "ivory" }: SectionProp
   );
 }
 
-export function Eyebrow({ children, light = false }: { children: React.ReactNode; light?: boolean }) {
+export function Eyebrow({
+  children,
+  light = false,
+  className
+}: {
+  children: React.ReactNode;
+  light?: boolean;
+  className?: string;
+}) {
   return (
     <p
       className={cn(
         "text-sm font-bold uppercase tracking-[0.24em]",
-        light ? "text-sage" : "text-clay"
+        light ? "text-sage" : "text-clay",
+        className
       )}
     >
       {children}

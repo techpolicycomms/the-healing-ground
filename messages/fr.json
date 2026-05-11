@@ -1,0 +1,36 @@
+{
+  "nav": {
+    "about": "À propos",
+    "approach": "Approche",
+    "services": "Séances",
+    "expats": "Expatrié·es",
+    "workshops": "Ateliers",
+    "journal": "Journal",
+    "discoveryCall": "Premier échange",
+    "book": "Réserver une première séance",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "footer": {
+    "navigate": "Naviguer",
+    "legal": "Cadre & confidentialité",
+    "medical": "Note médicale",
+    "privacy": "Confidentialité",
+    "legalNotice": "Mentions légales",
+    "cookies": "Cookies",
+    "letter": "Une lettre douce"
+  },
+  "language": {
+    "label": "Langue",
+    "interim": "Le site est principalement en anglais pour l’instant. Les consultations et les e-mails se font en français, anglais et espagnol.",
+    "switcherShort": {
+      "en": "EN",
+      "fr": "FR",
+      "es": "ES"
+    }
+  },
+  "hero": {
+    "eyebrow": "Pratique holistique, corps-esprit · Genève",
+    "tagline": "La guérison se fait au rythme de la sécurité."
+  }
+}

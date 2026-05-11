@@ -1,0 +1,36 @@
+{
+  "nav": {
+    "about": "About",
+    "approach": "Approach",
+    "services": "Services",
+    "expats": "Expats",
+    "workshops": "Workshops",
+    "journal": "Journal",
+    "discoveryCall": "Discovery call",
+    "book": "Book a first consultation",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "footer": {
+    "navigate": "Navigate",
+    "legal": "Care & policies",
+    "medical": "Medical disclaimer",
+    "privacy": "Privacy Policy",
+    "legalNotice": "Legal Notice",
+    "cookies": "Cookie Policy",
+    "letter": "A gentle letter"
+  },
+  "language": {
+    "label": "Language",
+    "interim": "The website is primarily in English while it grows. Consultations and email are available in English, French, and Spanish.",
+    "switcherShort": {
+      "en": "EN",
+      "fr": "FR",
+      "es": "ES"
+    }
+  },
+  "hero": {
+    "eyebrow": "Holistic, mind-body practice · Geneva",
+    "tagline": "Healing happens at the pace of safety."
+  }
+}

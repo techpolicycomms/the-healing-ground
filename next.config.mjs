@@ -18,6 +18,15 @@ const nextConfig = {
         hostname: "thehealing-ground.com"
       }
     ]
+  },
+  async redirects() {
+    return [
+      {
+        source: "/work-with-me",
+        destination: "/services",
+        permanent: true
+      }
+    ];
   }
 };
 

@@ -1,9 +1,11 @@
 import { PageShell } from "@/components/site/page-shell";
 import { Eyebrow, Section } from "@/components/site/section";
 import { PullQuote } from "@/components/site/pull-quote";
+import { PhraseRotator } from "@/components/site/phrase-rotator";
 import { BrandGradient } from "@/components/site/brand-gradient";
 import { ContactForm } from "@/components/contact-form";
 import { approach, homeServices, site, trustSignals } from "@/lib/site-content";
+import { FOUR_PILLARS, COMPLEMENTARY_LINE } from "@/lib/brand";
 import { ArrowRight, Check, Globe2, Languages, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 
@@ -37,9 +39,9 @@ export default function HomePage() {
                 <em className="font-serif italic text-olive">safety</em>.
               </h1>
               <p className="mt-7 max-w-2xl text-lg leading-8 text-ink/72 sm:text-xl text-pretty">
-                A grounded, mind-body space for people who are tired of surviving
-                — and ready to reconnect with themselves. Trauma-informed,
-                evidence-aware, gentle by design.
+                A grounded, naturopathic and mind-body space for people who are
+                tired of surviving — and ready to reconnect with themselves.
+                Gentle, evidence-aware, and complementary to medical care.
               </p>
               <div className="mt-8 flex flex-wrap gap-3 text-sm text-ink/70">
                 <span className="inline-flex min-h-10 items-center gap-2 rounded-full border border-stone/20 bg-ivory/75 px-4">
@@ -60,10 +62,10 @@ export default function HomePage() {
                   <ArrowRight aria-hidden="true" size={18} />
                 </Link>
                 <Link
-                  href="/work-with-me"
+                  href="/services"
                   className="inline-flex min-h-12 items-center justify-center rounded-full border border-stone/28 bg-ivory/80 px-7 text-sm font-semibold text-ink transition hover:bg-white"
                 >
-                  Explore the work
+                  See services & pricing
                 </Link>
               </div>
             </div>
@@ -76,6 +78,33 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+
+        <Section tone="mist">
+          <div className="mx-auto max-w-2xl text-center">
+            <Eyebrow>If this sounds familiar</Eyebrow>
+            <div className="mt-8 space-y-5">
+              <p className="font-serif text-2xl italic font-light leading-snug text-ink/80 text-balance">
+                You are exhausted, but appear strong.
+              </p>
+              <p className="font-serif text-2xl italic font-light leading-snug text-ink/80 text-balance">
+                Your body is asking you to slow down — and you don&apos;t know how.
+              </p>
+              <p className="font-serif text-2xl italic font-light leading-snug text-ink/80 text-balance">
+                You care for everyone, and have forgotten how to care for yourself.
+              </p>
+              <p className="font-serif text-2xl italic font-light leading-snug text-ink/80 text-balance">
+                You sense that something deeper is happening beneath your symptoms.
+              </p>
+            </div>
+            <hr className="hairline mx-auto my-10 max-w-[100px]" />
+            <p className="font-serif text-3xl font-medium leading-snug text-ink text-balance">
+              You are not broken. You are disconnected.
+            </p>
+            <p className="mt-2 font-serif text-3xl font-medium leading-snug text-ink text-balance">
+              And reconnection is possible.
+            </p>
+          </div>
+        </Section>
 
         <Section>
           <div className="grid gap-8 lg:grid-cols-[0.78fr_1.22fr] lg:items-start">
@@ -93,8 +122,8 @@ export default function HomePage() {
                 and keep moving.
               </p>
               <p>
-                The Healing Ground Geneva offers trauma-informed, holistic
-                mind-body practice with Celia de Mestral for people who want to
+                The Healing Ground Geneva is the holistic, naturopathic and
+                mind-body practice of Celia de Mestral — for people who want to
                 understand their stress responses without shame and rebuild a
                 steadier relationship with their body, emotions, work, and life
                 in Geneva.
@@ -116,28 +145,76 @@ export default function HomePage() {
 
         <Section tone="mist">
           <div className="max-w-3xl">
-            <Eyebrow>Ways to be supported</Eyebrow>
-            <h2 className="mt-4 font-serif text-[clamp(2.4rem,5vw,4.7rem)] font-semibold leading-none">
-              Gentle structure for stress, burnout, and nervous-system repair.
+            <Eyebrow>How I work</Eyebrow>
+            <h2 className="mt-4 font-serif text-[clamp(2.2rem,4.5vw,3.8rem)] font-medium leading-[1.05] text-balance">
+              Four pillars, woven together.
+            </h2>
+            <p className="mt-5 max-w-2xl text-lg leading-8 text-ink/72 text-pretty">
+              A first consultation considers your body, history, nervous
+              system, and emotional life as one connected story.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-5 sm:grid-cols-2">
+            {FOUR_PILLARS.map((pillar) => (
+              <article
+                key={pillar.key}
+                className="rounded-[8px] border border-stone/15 bg-ivory p-6"
+              >
+                <p className="eyebrow text-olive">{pillar.title}</p>
+                <p className="mt-4 leading-7 text-ink/72">{pillar.body}</p>
+              </article>
+            ))}
+          </div>
+
+          <p className="mt-10 max-w-2xl text-sm leading-7 text-ink-muted">
+            {COMPLEMENTARY_LINE}
+          </p>
+
+          <div className="mt-6 flex flex-wrap items-center gap-3">
+            <Link
+              href="/approach"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-olive underline-offset-[6px] hover:underline"
+            >
+              Read the approach in depth
+              <ArrowRight aria-hidden="true" size={16} />
+            </Link>
+            <span className="text-ink-muted" aria-hidden="true">·</span>
+            <Link
+              href="/services"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-olive underline-offset-[6px] hover:underline"
+            >
+              See services & pricing
+              <ArrowRight aria-hidden="true" size={16} />
+            </Link>
+          </div>
+        </Section>
+
+        <Section>
+          <div className="max-w-3xl">
+            <Eyebrow>If you arrived for a specific reason</Eyebrow>
+            <h2 className="mt-4 font-serif text-[clamp(1.8rem,3vw,2.4rem)] font-medium leading-tight text-balance">
+              These threads are often what brings people here. They are met as
+              part of the whole, never in isolation.
             </h2>
           </div>
-          <div className="mt-12 grid gap-5 lg:grid-cols-3">
+          <div className="mt-10 grid gap-5 lg:grid-cols-3">
             {homeServices.map((service) => (
               <Link
                 key={service.href}
                 href={service.href}
-                className="group rounded-[8px] border border-stone/15 bg-ivory p-6 transition hover:-translate-y-1 hover:shadow-soft"
+                className="group rounded-[8px] border border-stone/15 bg-paper p-6 transition hover:-translate-y-1 hover:shadow-soft"
               >
-                <service.icon aria-hidden="true" className="text-clay" size={28} />
-                <p className="mt-6 text-xs font-bold uppercase tracking-[0.2em] text-stone">
+                <service.icon aria-hidden="true" className="text-olive" size={26} />
+                <p className="mt-5 text-xs font-bold uppercase tracking-[0.2em] text-ink-muted">
                   {service.eyebrow}
                 </p>
-                <h3 className="mt-3 text-2xl font-semibold leading-tight">
+                <h3 className="mt-3 text-xl font-semibold leading-tight">
                   {service.title}
                 </h3>
-                <p className="mt-4 leading-7 text-ink/68">{service.text}</p>
-                <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-cedar">
-                  Learn more
+                <p className="mt-3 leading-7 text-ink/68">{service.text}</p>
+                <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-olive">
+                  Read more
                   <ArrowRight aria-hidden="true" size={16} />
                 </span>
               </Link>
@@ -165,9 +242,9 @@ export default function HomePage() {
                   that respects complexity.
                 </p>
                 <p>
-                  Her approach is trauma-informed, culturally sensitive, and
-                  carefully paced. It is especially attuned to internationally
-                  mobile adults, expats, diplomats, NGO workers, and people in
+                  Her approach is grounded, culturally sensitive, and carefully
+                  paced. It is especially attuned to internationally mobile
+                  adults, expats, diplomats, NGO workers, and people in
                   demanding professional environments who may be carrying more
                   than they show.
                 </p>
@@ -204,22 +281,9 @@ export default function HomePage() {
         </Section>
 
         <Section tone="mist" className="py-24 lg:py-32">
-          <div className="mx-auto max-w-3xl text-center">
-            <Eyebrow>Phrases that feel true</Eyebrow>
-            <div className="mt-12 space-y-4">
-              <PullQuote>{site.taglines.en}</PullQuote>
-              <p className="pull-quote text-center text-ink-soft/80">
-                {site.taglines.fr}
-              </p>
-              <p className="pull-quote text-center text-ink-soft/60">
-                {site.taglines.es}
-              </p>
-            </div>
-            <hr className="hairline mx-auto my-16 max-w-[120px]" />
-            <div className="space-y-12">
-              <PullQuote>Your body is not working against you.</PullQuote>
-              <PullQuote>Rest is necessary, not selfish.</PullQuote>
-            </div>
+          <Eyebrow className="block text-center">A phrase, gently</Eyebrow>
+          <div className="mt-12">
+            <PhraseRotator />
           </div>
         </Section>
 

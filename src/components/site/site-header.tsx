@@ -1,4 +1,5 @@
 import { navItems, site } from "@/lib/site-content";
+import { LanguageSwitcher } from "@/components/site/language-switcher";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
@@ -19,13 +20,18 @@ export function SiteHeader() {
             </Link>
           ))}
         </div>
-        <Link
-          href="/discovery-call"
-          className="inline-flex min-h-11 items-center gap-2 rounded-full bg-ink px-5 text-sm font-semibold text-ivory transition hover:bg-cedar"
-        >
-          Discovery call
-          <ArrowRight aria-hidden="true" size={16} />
-        </Link>
+        <div className="flex items-center gap-5">
+          <div className="hidden sm:block">
+            <LanguageSwitcher />
+          </div>
+          <Link
+            href="/discovery-call"
+            className="inline-flex min-h-11 items-center gap-2 rounded-full bg-ink px-5 text-sm font-semibold text-ivory transition hover:bg-cedar"
+          >
+            Discovery call
+            <ArrowRight aria-hidden="true" size={16} />
+          </Link>
+        </div>
       </nav>
     </header>
   );

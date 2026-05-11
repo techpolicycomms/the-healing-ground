@@ -6,7 +6,7 @@ import { Eyebrow, Section } from "@/components/site/section";
 export const metadata: Metadata = {
   title: "Medical disclaimer",
   description:
-    "The scope, boundaries, and ethics of The Healing Ground Geneva — Celia de Mestral. Coaching is complementary to, never a replacement for, medical or psychiatric care."
+    "The scope, boundaries, and ethics of The Healing Ground Geneva — Celia de Mestral. A holistic, mind-body practice, complementary to and never a replacement for medical or psychiatric care."
 };
 
 const crisisLines = [
@@ -35,7 +35,7 @@ export default function MedicalDisclaimerPage() {
               On scope, boundaries, and honesty.
             </h1>
             <p className="mt-7 max-w-2xl text-lg leading-8 text-ink/72">
-              The Healing Ground Geneva offers trauma-informed, holistic mind-body practice and
+              The Healing Ground Geneva offers holistic, naturopathic mind-body practice and
               educational support. This page explains, plainly, what that means —
               and what it does not.
             </p>
@@ -46,14 +46,16 @@ export default function MedicalDisclaimerPage() {
           <div className="mx-auto max-w-3xl space-y-12">
             <section>
               <h2 className="font-serif text-3xl font-semibold leading-tight">
-                Coaching, not medicine
+                Holistic practice, not medicine
               </h2>
               <p className="mt-4 leading-8 text-ink/72">
-                Celia de Mestral is a trauma-informed practitioner working in a
-                holistic and educational capacity. She is not a medical doctor,
-                psychologist, or psychiatrist. The work offered through The
-                Healing Ground Geneva does not diagnose, treat, cure, or prescribe
-                medication for any disease, disorder, or condition.
+                Celia de Mestral is a holistic practitioner offering
+                naturopathic, nutritional, phytotherapeutic, and mind-body
+                support in an educational and complementary capacity. She is
+                not a medical doctor, psychologist, or psychiatrist. The work
+                offered through The Healing Ground Geneva does not diagnose,
+                treat, cure, or prescribe medication for any disease, disorder,
+                or condition.
               </p>
               <p className="mt-4 leading-8 text-ink/72">
                 This work is complementary to — and never a replacement for —

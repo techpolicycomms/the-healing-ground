@@ -4,7 +4,8 @@ import type { MetadataRoute } from "next";
 const routes = [
   "",
   "/about",
-  "/work-with-me",
+  "/approach",
+  "/services",
   "/burnout-support",
   "/nervous-system-regulation",
   "/persistent-symptoms",

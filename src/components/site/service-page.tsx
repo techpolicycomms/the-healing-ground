@@ -79,23 +79,28 @@ export function ServicePage({ page }: ServicePageProps) {
         </Section>
 
         <Section>
-          <div className="mx-auto max-w-3xl text-center">
-            <Eyebrow>Next step</Eyebrow>
-            <h2 className="mt-4 font-serif text-[clamp(2.4rem,5vw,4.7rem)] font-semibold leading-none">
-              You do not need to wait until everything is unbearable.
-            </h2>
-            <p className="mt-6 text-lg leading-8 text-ink/70">
-              A discovery call is a low-pressure conversation to understand what
-              is happening, what you are looking for, and whether this work is a
-              suitable container.
+          <div className="mx-auto max-w-3xl">
+            <Eyebrow>How this fits the whole</Eyebrow>
+            <p className="mt-6 font-serif text-2xl italic font-light leading-snug text-ink/80 text-balance">
+              This is one of many threads we may follow together. A first
+              consultation considers it alongside your nutrition, nervous
+              system, history, and emotional life — not in isolation.
             </p>
-            <Link
-              href="/discovery-call"
-              className="mt-8 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-ink px-7 text-sm font-semibold text-ivory transition hover:bg-cedar"
-            >
-              Book a discovery call
-              <ArrowRight aria-hidden="true" size={18} />
-            </Link>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link
+                href="/services"
+                className="inline-flex min-h-12 items-center gap-2 rounded-full bg-ink px-6 text-sm font-semibold text-ivory transition hover:bg-cedar"
+              >
+                See services & pricing
+                <ArrowRight aria-hidden="true" size={17} />
+              </Link>
+              <Link
+                href="/discovery-call"
+                className="inline-flex min-h-12 items-center gap-2 rounded-full border border-stone/28 px-6 text-sm font-semibold text-ink transition hover:bg-mist"
+              >
+                Or a discovery call first
+              </Link>
+            </div>
           </div>
         </Section>
       </main>

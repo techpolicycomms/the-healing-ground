@@ -1,0 +1,30 @@
+{
+  "firstConsultation": {
+    "title": "First Consultation",
+    "duration": "~2 hours",
+    "price": "250 CHF",
+    "formats": ["In person — Geneva", "Online"],
+    "languages": ["English", "Français", "Español"],
+    "includes": [
+      "Comprehensive naturopathic intake (health history, lifestyle, nervous system, emotional landscape)",
+      "Personalised protocol — nutrition, phytotherapy, supplementation as relevant",
+      "Nervous-system regulation tools tailored to your day",
+      "Initial emotional-inquiry and mind-body practices",
+      "Written follow-up summary delivered within a week"
+    ]
+  },
+  "followUp": {
+    "title": "Follow-up Consultation",
+    "duration": "~1 hour",
+    "price": "180 CHF",
+    "formats": ["In person — Geneva", "Online"],
+    "languages": ["English", "Français", "Español"],
+    "blurb": "For continuing the work — refining the protocol, deepening practices, adjusting as you change."
+  },
+  "shortSupportSeries": {
+    "title": "Short Support Series",
+    "blurb": "A focused 3- or 4-session arc for people who want a clearer beginning, with intake, practice between sessions, and a written summary at the end.",
+    "pricingNote": "Bundle pricing to be confirmed",
+    "tbd": true
+  }
+}

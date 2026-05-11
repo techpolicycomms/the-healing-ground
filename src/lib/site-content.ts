@@ -1,17 +1,12 @@
 import {
   Anchor,
-  BookOpen,
   BriefcaseBusiness,
   Compass,
   HeartHandshake,
-  Leaf,
   Mail,
   MapPin,
   MessageCircle,
-  Moon,
-  PenLine,
   ShieldCheck,
-  Sparkles,
   Waves
 } from "lucide-react";
 
@@ -33,14 +28,15 @@ export const site = {
 
 export const navItems = [
   { label: "About", href: "/about" },
-  { label: "Work With Me", href: "/work-with-me" },
+  { label: "Approach", href: "/approach" },
+  { label: "Services", href: "/services" },
   { label: "Expats", href: "/expats-geneva" },
   { label: "Workshops", href: "/workshops" },
   { label: "Journal", href: "/journal" }
 ];
 
 export const trustSignals = [
-  "Trauma-informed and consent-led",
+  "Holistic, consent-led, and gentle",
   "English, French, and Spanish welcome",
   "Geneva-based, internationally aware",
   "Holistic support, complementary to medical care"
@@ -92,7 +88,7 @@ export const servicePages = {
   "/burnout-support": {
     title: "Burnout Support in Geneva",
     meta:
-      "Trauma-informed, holistic burnout support in Geneva for expats, UN professionals, NGO workers, diplomats, and emotionally exhausted high achievers.",
+      "Holistic, naturopathic burnout support in Geneva for expats, UN professionals, NGO workers, diplomats, and emotionally exhausted high achievers.",
     eyebrow: "Burnout support",
     headline: "When achievement has cost more than you expected.",
     intro:
@@ -123,7 +119,7 @@ export const servicePages = {
   "/nervous-system-regulation": {
     title: "Nervous System Regulation Geneva",
     meta:
-      "Trauma-informed support in Geneva for chronic stress, emotional overwhelm, freeze, hypervigilance, and sensitive professionals.",
+      "Holistic, mind-body support in Geneva for chronic stress, emotional overwhelm, freeze, hypervigilance, and sensitive professionals.",
     eyebrow: "Nervous system regulation",
     headline: "Your body is not overreacting. It is trying to protect you.",
     intro:
@@ -188,32 +184,27 @@ export const faqs = [
   {
     question: "Is this therapy?",
     answer:
-      "No. This is trauma-informed, holistic, mind-body practice. It can be emotionally deep and body-aware, but it does not diagnose or treat mental-health conditions. If therapy or medical care is more appropriate, Celia will say so plainly."
+      "No. This is a holistic, naturopathic, and mind-body practice. It can be emotionally deep and body-aware, but it does not diagnose or treat mental-health conditions. If therapy or medical care is more appropriate, Celia will say so plainly."
   },
   {
-    question: "Do I need to talk about trauma?",
-    answer:
-      "No. Trauma-informed means the work respects safety, consent, pacing, choice, and the body's protective responses. You never have to disclose more than feels right."
-  },
-  {
-    question: "Who is this for?",
-    answer:
-      "The work is especially relevant for expats, internationally mobile adults, UN and NGO professionals, diplomats, and high-functioning people who feel exhausted, overwhelmed, or disconnected from themselves."
-  },
-  {
-    question: "Can sessions happen online?",
-    answer:
-      "Yes. Sessions can take place online and are designed to feel calm, structured, and private. Geneva-based in-person formats are available for workshops and selected sessions."
-  },
-  {
-    question: "Which languages are available?",
+    question: "What languages do you work in?",
     answer:
       "Sessions are offered in English, French, and Spanish. You can switch language mid-session — many people do."
   },
   {
-    question: "Will this cure my symptoms?",
+    question: "Are sessions in person or online?",
     answer:
-      "No ethical practitioner can promise that. This work supports nervous-system capacity, stress awareness, emotional regulation, and embodied self-trust. It should sit alongside appropriate medical or therapeutic care when needed."
+      "Both. Consultations are available in Celia's Geneva practice or online, in a quiet and unhurried setting. Online sessions feel calm and private; the work translates well to either format."
+  },
+  {
+    question: "How do I know if this is right for me?",
+    answer:
+      "The simplest way is a discovery call — a short, no-pressure conversation to feel whether this work is a fit. If it isn't, Celia will name that openly and, where helpful, suggest a more appropriate next step."
+  },
+  {
+    question: "What if I am in crisis?",
+    answer:
+      "Booking is not the right first step if you are in immediate distress. In Switzerland, please call 144 for medical emergencies or 143 (La Main Tendue) for emotional support, 24/7. The medical disclaimer lists the full set of crisis lines."
   }
 ];
 
@@ -256,17 +247,12 @@ export const contactCards = [
   }
 ];
 
-export const workshopIdeas = [
-  { icon: Moon, title: "The Gentle Reset", text: "A 90-minute nervous-system workshop for professionals moving through chronic stress." },
-  { icon: BriefcaseBusiness, title: "Burnout Without Shame", text: "A reflective workshop for high-functioning teams and mission-driven organisations." },
-  { icon: Leaf, title: "Coming Home to the Body", text: "A small-group experience for grounding, body awareness, and emotional steadiness." },
-  { icon: BookOpen, title: "The Expat Nervous System", text: "For internationally mobile adults navigating adaptation, identity, and belonging." },
-  { icon: PenLine, title: "Boundaries as Nervous System Care", text: "A practical session on limits, language, recovery, and relational safety." },
-  { icon: Sparkles, title: "Soft Landing", text: "A seasonal gathering for Geneva newcomers and emotionally aware expats." }
-];
+// workshopIdeas removed — those titles were invented during the v1 pass
+// and not specified by Celia. The workshops page now signals "coming gently"
+// honestly rather than listing fictional offerings.
 
 export const legalDisclaimers = [
-  "The Healing Ground Geneva offers trauma-informed, holistic support — not medical diagnosis, psychotherapy, emergency mental-health care, or medical treatment.",
+  "The Healing Ground Geneva offers holistic, mind-body support — not medical diagnosis, psychotherapy, emergency mental-health care, or medical treatment.",
   "Information on this website is general and should not replace advice from qualified healthcare or mental-health professionals.",
   "If you are in crisis or feel unsafe, contact Swiss emergency services (144) or La Main Tendue (143) immediately.",
   "Client information is handled confidentially and in alignment with applicable Swiss data-protection expectations."

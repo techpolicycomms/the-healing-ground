@@ -1,4 +1,5 @@
 import { legalDisclaimers, navItems, site } from "@/lib/site-content";
+import { NewsletterForm } from "@/components/newsletter-form";
 import Link from "next/link";
 
 export function SiteFooter() {
@@ -55,8 +56,14 @@ export function SiteFooter() {
           </div>
         </div>
       </div>
-      <div className="mx-auto mt-10 max-w-7xl border-t border-ivory/12 pt-6">
-        <p className="max-w-4xl text-xs leading-6 text-ivory/55">
+      <div className="mx-auto mt-10 max-w-7xl border-t border-ivory/12 pt-10">
+        <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-sage">
+          A gentle letter
+        </h2>
+        <div className="mt-5 max-w-2xl">
+          <NewsletterForm tone="dark" />
+        </div>
+        <p className="mt-10 max-w-4xl text-xs leading-6 text-ivory/55">
           {legalDisclaimers[0]}
         </p>
         <p className="mt-5 text-xs text-ivory/50">
