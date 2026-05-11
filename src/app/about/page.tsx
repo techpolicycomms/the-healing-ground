@@ -1,16 +1,16 @@
 import { PageShell } from "@/components/site/page-shell";
 import { Eyebrow, Section } from "@/components/site/section";
 import { PullQuote } from "@/components/site/pull-quote";
+import { BrandGradient } from "@/components/site/brand-gradient";
 import { site } from "@/lib/site-content";
 import { ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "About Celia de Mestral",
   description:
-    "Meet Celia de Mestral, founder of The Healing Ground Geneva, offering trauma-informed coaching for stress, burnout, and nervous system support."
+    "Meet Celia de Mestral, founder of The Healing Ground Geneva, offering trauma-informed, holistic mind-body practice for stress, burnout, and nervous system support."
 };
 
 export default function AboutPage() {
@@ -19,15 +19,12 @@ export default function AboutPage() {
       <main className="bg-ivory text-ink">
         <Section>
           <div className="grid gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
-            <div className="relative aspect-[4/5] overflow-hidden rounded-[8px] bg-mist shadow-soft">
-              <Image
-                src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=85"
-                alt="A quiet coaching space with soft daylight"
-                fill
-                sizes="(min-width: 1024px) 44vw, 100vw"
-                className="object-cover"
-              />
-            </div>
+            <BrandGradient
+              tone="paper"
+              rounded
+              className="aspect-[4/5] shadow-soft"
+              caption="Portrait of Celia — Geneva"
+            />
             <div>
               <Eyebrow>Founder</Eyebrow>
               <h1 className="mt-5 font-serif text-[clamp(3rem,7vw,6rem)] font-semibold leading-[0.92]">
@@ -71,7 +68,7 @@ export default function AboutPage() {
         <Section tone="mist">
           <div className="grid gap-8 lg:grid-cols-3">
             {[
-              ["Mission", "To help internationally minded adults rebuild safety, capacity, and self-trust through trauma-informed coaching."],
+              ["Mission", "To help internationally minded adults rebuild safety, capacity, and self-trust through trauma-informed, holistic mind-body practice."],
               ["Vision", "A Geneva wellness culture where sensitivity, stress, and burnout are met with nuance instead of shame."],
               ["Promise", "A grounded space where you can slow down, be heard, and make sense of your body without being pathologised."]
             ].map(([title, text]) => (

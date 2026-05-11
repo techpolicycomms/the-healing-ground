@@ -21,7 +21,7 @@ export default function PrivacyPolicyPage() {
             <div className="mt-8 space-y-6 leading-8 text-ink/72">
               <p>
                 {site.name} collects only the information needed to respond to
-                enquiries, manage coaching relationships, and improve the
+                enquiries, manage client relationships, and improve the
                 website experience.
               </p>
               <p>

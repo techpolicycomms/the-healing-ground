@@ -7,7 +7,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "For Expats in Geneva",
   description:
-    "Trauma-informed coaching for expats in Geneva, UN professionals, NGO workers, diplomats, and internationally mobile adults experiencing stress or burnout."
+    "Trauma-informed, holistic mind-body support for expats in Geneva — UN professionals, NGO workers, diplomats, and internationally mobile adults experiencing stress or burnout."
 };
 
 const groups = [
@@ -38,10 +38,10 @@ export default function ExpatsGenevaPage() {
                 need stability.
               </p>
               <p>
-                The Healing Ground Geneva offers a culturally sensitive coaching
-                space for the stress of relocation, high-responsibility work,
-                identity shifts, language fatigue, belonging, and emotional
-                overwhelm.
+                The Healing Ground Geneva offers a culturally sensitive,
+                holistic mind-body practice for the stress of relocation,
+                high-responsibility work, identity shifts, language fatigue,
+                belonging, and emotional overwhelm.
               </p>
             </div>
           </div>

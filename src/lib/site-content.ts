@@ -18,15 +18,16 @@ import {
 export const site = {
   name: "The Healing Ground Geneva",
   founder: "Celia de Mestral",
+  practitionerTitle: "Holistic Practitioner — Naturopathic & Mind-Body",
   domain: "https://www.thehealinggroundgeneva.com",
   email: "hello@thehealinggroundgeneva.com",
   descriptor:
-    "Trauma-informed coaching for stress, burnout, nervous system dysregulation, emotional overwhelm, and persistent stress-related symptoms.",
-  tagline: "Come home to your body.",
+    "A grounded, mind-body practice in Geneva for stress, burnout, nervous-system regulation, and persistent stress-related symptoms.",
+  tagline: "Healing happens at the pace of safety.",
   taglines: {
-    en: "Come home to your body.",
-    fr: "Revenez a vous, en douceur.",
-    es: "Vuelve a ti, con suavidad."
+    en: "Healing happens at the pace of safety.",
+    fr: "La guérison se fait au rythme de la sécurité.",
+    es: "La sanación ocurre al ritmo de la seguridad."
   }
 };
 
@@ -42,7 +43,7 @@ export const trustSignals = [
   "Trauma-informed and consent-led",
   "English, French, and Spanish welcome",
   "Geneva-based, internationally aware",
-  "Coaching, not diagnosis or medical treatment"
+  "Holistic support, complementary to medical care"
 ];
 
 export const homeServices = [
@@ -58,14 +59,14 @@ export const homeServices = [
     icon: Waves,
     eyebrow: "Nervous system regulation",
     title: "For bodies living in urgency, vigilance, freeze, or overwhelm.",
-    text: "Gentle practices and reflective coaching that help your system notice safety, choice, rhythm, and ground."
+    text: "Gentle practices and reflective support that help your system notice safety, choice, rhythm, and ground."
   },
   {
     href: "/persistent-symptoms",
     icon: HeartHandshake,
     eyebrow: "Persistent symptoms",
     title: "For stress-related symptoms that deserve to be listened to.",
-    text: "Support for the emotional and nervous-system dimensions of fatigue, tension, sleep disruption, digestive sensitivity, and hormonal stress."
+    text: "Holistic support for the emotional and nervous-system dimensions of fatigue, tension, sleep disruption, digestive sensitivity, and hormonal stress."
   }
 ];
 
@@ -78,7 +79,7 @@ export const approach = [
   {
     icon: Anchor,
     title: "Grounded, not mystical",
-    text: "Celia uses emotionally intelligent coaching, nervous-system education, and practical integration rather than grand promises."
+    text: "Celia works with emotionally intelligent inquiry, nervous-system education, and practical integration rather than grand promises."
   },
   {
     icon: Compass,
@@ -91,13 +92,12 @@ export const servicePages = {
   "/burnout-support": {
     title: "Burnout Support in Geneva",
     meta:
-      "Trauma-informed burnout support in Geneva for expats, UN professionals, NGO workers, diplomats, and emotionally exhausted high achievers.",
+      "Trauma-informed, holistic burnout support in Geneva for expats, UN professionals, NGO workers, diplomats, and emotionally exhausted high achievers.",
     eyebrow: "Burnout support",
     headline: "When achievement has cost more than you expected.",
     intro:
       "Burnout is not only tiredness. It can feel like distance from yourself: a nervous system that cannot fully switch off, a mind that keeps pushing, and a body that has been asking for attention for a long time.",
-    image:
-      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=85",
+    image: "/images/placeholders/burnout.svg",
     sections: [
       {
         title: "This work may support you if",
@@ -123,13 +123,12 @@ export const servicePages = {
   "/nervous-system-regulation": {
     title: "Nervous System Regulation Geneva",
     meta:
-      "Nervous system regulation coaching in Geneva for chronic stress, emotional overwhelm, freeze, hypervigilance, and sensitive professionals.",
+      "Trauma-informed support in Geneva for chronic stress, emotional overwhelm, freeze, hypervigilance, and sensitive professionals.",
     eyebrow: "Nervous system regulation",
     headline: "Your body is not overreacting. It is trying to protect you.",
     intro:
       "Regulation is not about becoming permanently calm. It is about developing enough inner safety and capacity to notice what is happening, return to choice, and meet life with more steadiness.",
-    image:
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=85",
+    image: "/images/placeholders/nervous-system.svg",
     sections: [
       {
         title: "Together we explore",
@@ -145,7 +144,7 @@ export const servicePages = {
         items: [
           "quiet, structured sessions with space to pause",
           "psychoeducation in plain language",
-          "body-aware coaching without forcing bodywork",
+          "body-aware inquiry without forcing bodywork",
           "integration prompts between sessions"
         ]
       }
@@ -155,13 +154,12 @@ export const servicePages = {
   "/persistent-symptoms": {
     title: "Persistent Stress-Related Symptoms Geneva",
     meta:
-      "Coaching support in Geneva for persistent stress-related symptoms, emotional overwhelm, fatigue, sleep disruption, and hormonal stress.",
+      "Holistic support in Geneva for persistent stress-related symptoms, emotional overwhelm, fatigue, sleep disruption, and hormonal stress.",
     eyebrow: "Persistent symptoms",
     headline: "When the body keeps speaking, it deserves a compassionate response.",
     intro:
-      "Persistent symptoms can be frightening and frustrating, especially when tests are inconclusive or advice feels fragmented. Coaching does not replace medical care; it offers a calm place to understand the stress patterns, emotions, and nervous-system load around your symptoms.",
-    image:
-      "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1400&q=85",
+      "Persistent symptoms can be frightening and frustrating, especially when tests are inconclusive or advice feels fragmented. This work does not replace medical care; it offers a calm place to understand the stress patterns, emotions, and nervous-system load around your symptoms.",
+    image: "/images/placeholders/symptoms.svg",
     sections: [
       {
         title: "Areas often explored",
@@ -190,7 +188,7 @@ export const faqs = [
   {
     question: "Is this therapy?",
     answer:
-      "No. This is trauma-informed coaching. It can be emotionally deep and body-aware, but it does not diagnose or treat mental health conditions. If therapy or medical care is more appropriate, Celia will say so."
+      "No. This is trauma-informed, holistic, mind-body practice. It can be emotionally deep and body-aware, but it does not diagnose or treat mental-health conditions. If therapy or medical care is more appropriate, Celia will say so plainly."
   },
   {
     question: "Do I need to talk about trauma?",
@@ -205,12 +203,12 @@ export const faqs = [
   {
     question: "Can sessions happen online?",
     answer:
-      "Yes. Sessions can take place online and are designed to feel calm, structured, and private. Geneva-based in-person formats may be offered for workshops and selected sessions."
+      "Yes. Sessions can take place online and are designed to feel calm, structured, and private. Geneva-based in-person formats are available for workshops and selected sessions."
   },
   {
     question: "Which languages are available?",
     answer:
-      "English is the primary website language. French and Spanish are welcome in the brand ecosystem and can be used where appropriate depending on the session or format."
+      "Sessions are offered in English, French, and Spanish. You can switch language mid-session — many people do."
   },
   {
     question: "Will this cure my symptoms?",
@@ -230,7 +228,7 @@ export const journalIdeas = [
   "The cost of always being adaptable",
   "Boundaries for people who were praised for coping",
   "Coming home to your body after burnout",
-  "The difference between coaching, therapy, and medical care",
+  "The difference between holistic practice, therapy, and medical care",
   "Why diplomats and NGO workers normalize stress",
   "How to prepare for a discovery call",
   "Gentle grounding practices for busy professionals",
@@ -261,15 +259,15 @@ export const contactCards = [
 export const workshopIdeas = [
   { icon: Moon, title: "The Gentle Reset", text: "A 90-minute nervous-system workshop for professionals moving through chronic stress." },
   { icon: BriefcaseBusiness, title: "Burnout Without Shame", text: "A reflective workshop for high-functioning teams and mission-driven organisations." },
-  { icon: Leaf, title: "Come Home to Your Body", text: "A small-group experience for grounding, body awareness, and emotional steadiness." },
+  { icon: Leaf, title: "Coming Home to the Body", text: "A small-group experience for grounding, body awareness, and emotional steadiness." },
   { icon: BookOpen, title: "The Expat Nervous System", text: "For internationally mobile adults navigating adaptation, identity, and belonging." },
   { icon: PenLine, title: "Boundaries as Nervous System Care", text: "A practical session on limits, language, recovery, and relational safety." },
   { icon: Sparkles, title: "Soft Landing", text: "A seasonal gathering for Geneva newcomers and emotionally aware expats." }
 ];
 
 export const legalDisclaimers = [
-  "The Healing Ground Geneva provides coaching and educational support, not medical diagnosis, psychotherapy, emergency mental health care, or medical treatment.",
-  "Information on this website is general and should not replace advice from qualified healthcare or mental health professionals.",
-  "If you are in crisis or feel unsafe, contact emergency services in Switzerland or your local crisis support service immediately.",
-  "Client information should be handled confidentially and in alignment with applicable Swiss data protection expectations."
+  "The Healing Ground Geneva offers trauma-informed, holistic support — not medical diagnosis, psychotherapy, emergency mental-health care, or medical treatment.",
+  "Information on this website is general and should not replace advice from qualified healthcare or mental-health professionals.",
+  "If you are in crisis or feel unsafe, contact Swiss emergency services (144) or La Main Tendue (143) immediately.",
+  "Client information is handled confidentially and in alignment with applicable Swiss data-protection expectations."
 ];

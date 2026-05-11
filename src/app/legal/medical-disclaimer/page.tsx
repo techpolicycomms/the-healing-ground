@@ -35,7 +35,7 @@ export default function MedicalDisclaimerPage() {
               On scope, boundaries, and honesty.
             </h1>
             <p className="mt-7 max-w-2xl text-lg leading-8 text-ink/72">
-              The Healing Ground Geneva offers trauma-informed coaching and
+              The Healing Ground Geneva offers trauma-informed, holistic mind-body practice and
               educational support. This page explains, plainly, what that means —
               and what it does not.
             </p>
@@ -50,7 +50,7 @@ export default function MedicalDisclaimerPage() {
               </h2>
               <p className="mt-4 leading-8 text-ink/72">
                 Celia de Mestral is a trauma-informed practitioner working in a
-                coaching and educational capacity. She is not a medical doctor,
+                holistic and educational capacity. She is not a medical doctor,
                 psychologist, or psychiatrist. The work offered through The
                 Healing Ground Geneva does not diagnose, treat, cure, or prescribe
                 medication for any disease, disorder, or condition.
@@ -106,7 +106,7 @@ export default function MedicalDisclaimerPage() {
               </h2>
               <p className="mt-4 leading-8 text-ink/72">
                 The practice operates in accordance with Swiss and Geneva
-                cantonal expectations regarding coaching and complementary
+                cantonal expectations regarding holistic, complementary
                 support. No claim is made, on this website or in session, to
                 cure illness or to perform acts reserved for licensed medical
                 professionals. Where a referral to medical, psychiatric, or

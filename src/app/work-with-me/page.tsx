@@ -7,7 +7,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Work With Me",
   description:
-    "Trauma-informed coaching formats with Celia de Mestral for stress, burnout, nervous system regulation, and emotional overwhelm in Geneva."
+    "Trauma-informed, holistic mind-body practice formats with Celia de Mestral for stress, burnout, nervous system regulation, and emotional overwhelm in Geneva."
 };
 
 const formats = [

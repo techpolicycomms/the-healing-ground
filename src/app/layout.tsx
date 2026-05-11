@@ -23,18 +23,18 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.thehealinggroundgeneva.com"),
   title: {
-    default: "The Healing Ground Geneva | Trauma-Informed Coaching",
+    default: "The Healing Ground Geneva | Holistic, Mind-Body Practice",
     template: "%s | The Healing Ground Geneva"
   },
   description:
-    "Trauma-informed coaching in Geneva for stress, burnout, nervous system dysregulation, emotional overwhelm, and persistent stress-related symptoms.",
+    "A grounded, trauma-informed, mind-body practice in Geneva for stress, burnout, nervous-system regulation, and persistent stress-related symptoms.",
   icons: {
     icon: "/favicon.svg"
   },
   openGraph: {
     title: "The Healing Ground Geneva",
     description:
-      "Come home to your body with trauma-informed coaching for stress, burnout, and nervous system support.",
+      "Healing happens at the pace of safety. A grounded, mind-body practice in Geneva — English, French, Spanish.",
     url: "https://www.thehealinggroundgeneva.com",
     siteName: "The Healing Ground Geneva",
     locale: "en_GB",

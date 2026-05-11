@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "FAQ",
   description:
-    "Frequently asked questions about trauma-informed coaching, burnout support, nervous system regulation, sessions, languages, and ethical boundaries."
+    "Frequently asked questions about trauma-informed, holistic mind-body practice, burnout support, nervous system regulation, sessions, languages, and ethical boundaries."
 };
 
 export default function FAQPage() {

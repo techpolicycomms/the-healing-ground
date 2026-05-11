@@ -20,7 +20,7 @@ export default function LegalNoticePage() {
             </h1>
             <div className="mt-8 space-y-6 leading-8 text-ink/72">
               <p>
-                {site.name} is a Geneva-based coaching brand led by {site.founder}.
+                {site.name} is a Geneva-based holistic mind-body practice led by {site.founder}.
                 Final legal entity details, registered address, UID if
                 applicable, and professional credentials should be added before
                 launch.
