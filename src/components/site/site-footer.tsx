@@ -39,6 +39,9 @@ export function SiteFooter() {
               Legal
             </h2>
             <div className="mt-4 grid gap-3 text-sm text-ivory/75">
+              <Link href="/legal/medical-disclaimer" className="hover:text-ivory">
+                Medical disclaimer
+              </Link>
               <Link href="/privacy-policy" className="hover:text-ivory">
                 Privacy Policy
               </Link>

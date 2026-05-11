@@ -1,5 +1,6 @@
 import { PageShell } from "@/components/site/page-shell";
 import { Eyebrow, Section } from "@/components/site/section";
+import { PullQuote } from "@/components/site/pull-quote";
 import { ContactForm } from "@/components/contact-form";
 import { approach, homeServices, site, trustSignals } from "@/lib/site-content";
 import { ArrowRight, Check, Globe2, Languages, ShieldCheck } from "lucide-react";
@@ -202,6 +203,17 @@ export default function HomePage() {
                   <p className="mt-3 leading-7 text-ivory/68">{item.text}</p>
                 </article>
               ))}
+            </div>
+          </div>
+        </Section>
+
+        <Section tone="mist" className="py-24 lg:py-32">
+          <div className="mx-auto max-w-3xl text-center">
+            <Eyebrow>Phrases that feel true</Eyebrow>
+            <div className="mt-12 space-y-12">
+              <PullQuote>Healing happens at the pace of safety.</PullQuote>
+              <PullQuote>Your body is not working against you.</PullQuote>
+              <PullQuote>Rest is necessary, not selfish.</PullQuote>
             </div>
           </div>
         </Section>

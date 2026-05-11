@@ -1,7 +1,24 @@
 import type { Metadata } from "next";
 import { ClerkProvider } from "@clerk/nextjs";
+import { Fraunces, Inter } from "next/font/google";
 import { AnalyticsProvider } from "@/components/analytics/posthog-provider";
 import "./globals.css";
+
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  variable: "--font-serif",
+  display: "swap",
+  weight: "variable",
+  style: ["normal", "italic"],
+  axes: ["opsz", "SOFT"]
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
+  weight: ["400", "500", "600"]
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.thehealinggroundgeneva.com"),
@@ -33,7 +50,7 @@ export default function RootLayout({
   const app = <AnalyticsProvider>{children}</AnalyticsProvider>;
 
   return (
-    <html lang="en-GB">
+    <html lang="en-GB" className={`${fraunces.variable} ${inter.variable}`}>
       <body>
         {process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY ? (
           <ClerkProvider>{app}</ClerkProvider>
