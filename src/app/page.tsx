@@ -78,6 +78,33 @@ export default function HomePage() {
           </div>
         </section>
 
+        <Section tone="mist">
+          <div className="mx-auto max-w-2xl text-center">
+            <Eyebrow>If this sounds familiar</Eyebrow>
+            <div className="mt-8 space-y-5">
+              <p className="font-serif text-2xl italic font-light leading-snug text-ink/80 text-balance">
+                You are exhausted, but appear strong.
+              </p>
+              <p className="font-serif text-2xl italic font-light leading-snug text-ink/80 text-balance">
+                Your body is asking you to slow down — and you don&apos;t know how.
+              </p>
+              <p className="font-serif text-2xl italic font-light leading-snug text-ink/80 text-balance">
+                You care for everyone, and have forgotten how to care for yourself.
+              </p>
+              <p className="font-serif text-2xl italic font-light leading-snug text-ink/80 text-balance">
+                You sense that something deeper is happening beneath your symptoms.
+              </p>
+            </div>
+            <hr className="hairline mx-auto my-10 max-w-[100px]" />
+            <p className="font-serif text-3xl font-medium leading-snug text-ink text-balance">
+              You are not broken. You are disconnected.
+            </p>
+            <p className="mt-2 font-serif text-3xl font-medium leading-snug text-ink text-balance">
+              And reconnection is possible.
+            </p>
+          </div>
+        </Section>
+
         <Section>
           <div className="grid gap-8 lg:grid-cols-[0.78fr_1.22fr] lg:items-start">
             <div>
