@@ -184,32 +184,27 @@ export const faqs = [
   {
     question: "Is this therapy?",
     answer:
-      "No. This is trauma-informed, holistic, mind-body practice. It can be emotionally deep and body-aware, but it does not diagnose or treat mental-health conditions. If therapy or medical care is more appropriate, Celia will say so plainly."
+      "No. This is a holistic, naturopathic, and mind-body practice. It can be emotionally deep and body-aware, but it does not diagnose or treat mental-health conditions. If therapy or medical care is more appropriate, Celia will say so plainly."
   },
   {
-    question: "Do I need to talk about trauma?",
-    answer:
-      "No. Trauma-informed means the work respects safety, consent, pacing, choice, and the body's protective responses. You never have to disclose more than feels right."
-  },
-  {
-    question: "Who is this for?",
-    answer:
-      "The work is especially relevant for expats, internationally mobile adults, UN and NGO professionals, diplomats, and high-functioning people who feel exhausted, overwhelmed, or disconnected from themselves."
-  },
-  {
-    question: "Can sessions happen online?",
-    answer:
-      "Yes. Sessions can take place online and are designed to feel calm, structured, and private. Geneva-based in-person formats are available for workshops and selected sessions."
-  },
-  {
-    question: "Which languages are available?",
+    question: "What languages do you work in?",
     answer:
       "Sessions are offered in English, French, and Spanish. You can switch language mid-session — many people do."
   },
   {
-    question: "Will this cure my symptoms?",
+    question: "Are sessions in person or online?",
     answer:
-      "No ethical practitioner can promise that. This work supports nervous-system capacity, stress awareness, emotional regulation, and embodied self-trust. It should sit alongside appropriate medical or therapeutic care when needed."
+      "Both. Consultations are available in Celia's Geneva practice or online, in a quiet and unhurried setting. Online sessions feel calm and private; the work translates well to either format."
+  },
+  {
+    question: "How do I know if this is right for me?",
+    answer:
+      "The simplest way is a discovery call — a short, no-pressure conversation to feel whether this work is a fit. If it isn't, Celia will name that openly and, where helpful, suggest a more appropriate next step."
+  },
+  {
+    question: "What if I am in crisis?",
+    answer:
+      "Booking is not the right first step if you are in immediate distress. In Switzerland, please call 144 for medical emergencies or 143 (La Main Tendue) for emotional support, 24/7. The medical disclaimer lists the full set of crisis lines."
   }
 ];
 
