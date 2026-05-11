@@ -1,5 +1,6 @@
 import { PageShell } from "@/components/site/page-shell";
 import { Eyebrow, Section } from "@/components/site/section";
+import { PullQuote } from "@/components/site/pull-quote";
 import { site } from "@/lib/site-content";
 import { ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
@@ -61,6 +62,11 @@ export default function AboutPage() {
               </Link>
             </div>
           </div>
+        </Section>
+        <Section>
+          <PullQuote>
+            You are not broken. You are disconnected. And reconnection is possible.
+          </PullQuote>
         </Section>
         <Section tone="mist">
           <div className="grid gap-8 lg:grid-cols-3">
