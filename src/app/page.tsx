@@ -1,22 +1,23 @@
 import { PageShell } from "@/components/site/page-shell";
 import { Eyebrow, Section } from "@/components/site/section";
 import { PullQuote } from "@/components/site/pull-quote";
+import { BrandGradient } from "@/components/site/brand-gradient";
 import { ContactForm } from "@/components/contact-form";
 import { approach, homeServices, site, trustSignals } from "@/lib/site-content";
 import { ArrowRight, Check, Globe2, Languages, ShieldCheck } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function HomePage() {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
+    "@type": "LocalBusiness",
     name: site.name,
     url: site.domain,
     areaServed: "Geneva, Switzerland",
-    founder: site.founder,
+    founder: { "@type": "Person", name: site.founder },
     description: site.descriptor,
-    serviceType: "Trauma-informed coaching"
+    image: `${site.domain}/opengraph-image`,
+    knowsLanguage: ["en", "fr", "es"]
   };
 
   return (
@@ -27,28 +28,18 @@ export default function HomePage() {
       />
       <main className="bg-ivory text-ink">
         <section className="relative overflow-hidden border-b border-stone/10">
-          <div className="absolute inset-0">
-            <Image
-              src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2200&q=86"
-              alt=""
-              fill
-              priority
-              sizes="100vw"
-              className="object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-ivory via-ivory/88 to-ivory/42" />
-            <div className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-ivory to-transparent" />
-          </div>
-          <div className="relative mx-auto grid max-w-7xl gap-12 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[1.02fr_0.98fr] lg:py-24">
+          <BrandGradient tone="cream" className="absolute inset-0" />
+          <div className="relative mx-auto grid max-w-7xl gap-12 px-5 py-20 sm:px-8 sm:py-24 lg:grid-cols-[1.02fr_0.98fr] lg:py-28">
             <div className="max-w-3xl">
-              <Eyebrow>Trauma-informed coaching in Geneva</Eyebrow>
-              <h1 className="mt-5 font-serif text-[clamp(3rem,7vw,6.4rem)] font-semibold leading-[0.92] tracking-normal">
-                Come home to your body.
+              <Eyebrow>Holistic, mind-body practice · Geneva</Eyebrow>
+              <h1 className="mt-5 font-serif text-[clamp(2.75rem,6vw,4.75rem)] font-medium leading-[1.05] tracking-[-0.02em] text-balance">
+                Healing happens at the pace of{" "}
+                <em className="font-serif italic text-olive">safety</em>.
               </h1>
-              <p className="mt-7 max-w-2xl text-lg leading-8 text-ink/72 sm:text-xl">
-                A calm, sophisticated coaching space for stress, burnout,
-                nervous system dysregulation, emotional overwhelm, and persistent
-                stress-related symptoms.
+              <p className="mt-7 max-w-2xl text-lg leading-8 text-ink/72 sm:text-xl text-pretty">
+                A grounded, mind-body space for people who are tired of surviving
+                — and ready to reconnect with themselves. Trauma-informed,
+                evidence-aware, gentle by design.
               </p>
               <div className="mt-8 flex flex-wrap gap-3 text-sm text-ink/70">
                 <span className="inline-flex min-h-10 items-center gap-2 rounded-full border border-stone/20 bg-ivory/75 px-4">
@@ -57,15 +48,15 @@ export default function HomePage() {
                 </span>
                 <span className="inline-flex min-h-10 items-center gap-2 rounded-full border border-stone/20 bg-ivory/75 px-4">
                   <Languages aria-hidden="true" size={17} />
-                  English, French, Spanish
+                  English · Français · Español
                 </span>
               </div>
               <div className="mt-9 flex flex-col gap-3 sm:flex-row">
                 <Link
-                  href="/discovery-call"
+                  href="/book"
                   className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-ink px-7 text-sm font-semibold text-ivory transition hover:bg-cedar"
                 >
-                  Book a discovery call
+                  Book a first session
                   <ArrowRight aria-hidden="true" size={18} />
                 </Link>
                 <Link
@@ -75,6 +66,13 @@ export default function HomePage() {
                   Explore the work
                 </Link>
               </div>
+            </div>
+            <div className="hidden lg:block">
+              <BrandGradient
+                tone="sand"
+                className="relative aspect-[4/5] rounded-[12px] shadow-soft"
+                caption="Geneva · in person & online"
+              />
             </div>
           </div>
         </section>
@@ -95,10 +93,11 @@ export default function HomePage() {
                 and keep moving.
               </p>
               <p>
-                The Healing Ground Geneva offers trauma-informed coaching with
-                Celia de Mestral for people who want to understand their stress
-                responses without shame and rebuild a steadier relationship with
-                their body, emotions, work, and life in Geneva.
+                The Healing Ground Geneva offers trauma-informed, holistic
+                mind-body practice with Celia de Mestral for people who want to
+                understand their stress responses without shame and rebuild a
+                steadier relationship with their body, emotions, work, and life
+                in Geneva.
               </p>
             </div>
           </div>
@@ -148,15 +147,12 @@ export default function HomePage() {
 
         <Section>
           <div className="grid gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
-            <div className="relative aspect-[4/5] overflow-hidden rounded-[8px] bg-mist shadow-soft">
-              <Image
-                src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1200&q=85"
-                alt="A quiet table with a notebook, tea, and soft daylight"
-                fill
-                sizes="(min-width: 1024px) 44vw, 100vw"
-                className="object-cover"
-              />
-            </div>
+            <BrandGradient
+              tone="sand"
+              rounded
+              className="aspect-[4/5] shadow-soft"
+              caption="A quiet table — Geneva"
+            />
             <div>
               <Eyebrow>Founder-led care</Eyebrow>
               <h2 className="mt-4 font-serif text-[clamp(2.35rem,5vw,4.6rem)] font-semibold leading-none">
@@ -210,8 +206,17 @@ export default function HomePage() {
         <Section tone="mist" className="py-24 lg:py-32">
           <div className="mx-auto max-w-3xl text-center">
             <Eyebrow>Phrases that feel true</Eyebrow>
-            <div className="mt-12 space-y-12">
-              <PullQuote>Healing happens at the pace of safety.</PullQuote>
+            <div className="mt-12 space-y-4">
+              <PullQuote>{site.taglines.en}</PullQuote>
+              <p className="pull-quote text-center text-ink-soft/80">
+                {site.taglines.fr}
+              </p>
+              <p className="pull-quote text-center text-ink-soft/60">
+                {site.taglines.es}
+              </p>
+            </div>
+            <hr className="hairline mx-auto my-16 max-w-[120px]" />
+            <div className="space-y-12">
               <PullQuote>Your body is not working against you.</PullQuote>
               <PullQuote>Rest is necessary, not selfish.</PullQuote>
             </div>
@@ -232,7 +237,7 @@ export default function HomePage() {
               <div className="mt-6 flex items-start gap-3 rounded-[8px] border border-stone/15 bg-mist p-4 text-sm leading-6 text-ink/70">
                 <ShieldCheck aria-hidden="true" className="mt-1 shrink-0 text-clay" size={18} />
                 <p>
-                  If coaching is not the right container, Celia will name that
+                  If this work is not the right container, Celia will name that
                   clearly and suggest a more appropriate next step.
                 </p>
               </div>

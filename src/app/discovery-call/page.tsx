@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Discovery Call",
   description:
-    "Book a calm discovery call with Celia de Mestral to explore trauma-informed coaching for stress, burnout, and nervous system support."
+    "Book a calm discovery call with Celia de Mestral to explore trauma-informed, holistic mind-body practice for stress, burnout, and nervous system support."
 };
 
 export default function DiscoveryCallPage() {
@@ -24,7 +24,7 @@ export default function DiscoveryCallPage() {
                 <p>
                   You do not need to explain everything perfectly. The call is a
                   calm space to name what is happening, what you are hoping for,
-                  and whether trauma-informed coaching feels like the right next
+                  and whether trauma-informed, holistic mind-body practice feels like the right next
                   step.
                 </p>
                 <p>

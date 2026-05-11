@@ -1,9 +1,11 @@
 import { PageShell } from "@/components/site/page-shell";
 import { Eyebrow, Section } from "@/components/site/section";
+import { BrandGradient } from "@/components/site/brand-gradient";
 import { ArrowRight, Check } from "lucide-react";
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
+
+type ServicePageTone = "sand" | "paper" | "sage" | "rose-dust" | "beige";
 
 type ServicePageProps = {
   page: {
@@ -13,6 +15,8 @@ type ServicePageProps = {
     headline: string;
     intro: string;
     image: string;
+    imageCaption?: string;
+    imageTone?: ServicePageTone;
     sections: readonly { title: string; items: readonly string[] }[];
     cta: string;
   };
@@ -47,16 +51,12 @@ export function ServicePage({ page }: ServicePageProps) {
                 <ArrowRight aria-hidden="true" size={18} />
               </Link>
             </div>
-            <div className="relative aspect-[4/5] overflow-hidden rounded-[8px] bg-mist shadow-soft">
-              <Image
-                src={page.image}
-                alt=""
-                fill
-                sizes="(min-width: 1024px) 45vw, 100vw"
-                className="object-cover"
-              />
-              <div className="absolute inset-0 bg-ink/10" />
-            </div>
+            <BrandGradient
+              tone={page.imageTone ?? "sand"}
+              rounded
+              className="aspect-[4/5] shadow-soft"
+              caption={page.imageCaption ?? "Geneva · in person & online"}
+            />
           </div>
         </Section>
 
