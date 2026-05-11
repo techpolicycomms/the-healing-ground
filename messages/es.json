@@ -1,0 +1,36 @@
+{
+  "nav": {
+    "about": "Sobre Celia",
+    "approach": "Enfoque",
+    "services": "Sesiones",
+    "expats": "Expat",
+    "workshops": "Talleres",
+    "journal": "Diario",
+    "discoveryCall": "Llamada de descubrimiento",
+    "book": "Reservar una primera sesión",
+    "faq": "Preguntas frecuentes",
+    "contact": "Contacto"
+  },
+  "footer": {
+    "navigate": "Explorar",
+    "legal": "Marco y privacidad",
+    "medical": "Nota médica",
+    "privacy": "Privacidad",
+    "legalNotice": "Aviso legal",
+    "cookies": "Cookies",
+    "letter": "Una carta tranquila"
+  },
+  "language": {
+    "label": "Idioma",
+    "interim": "El sitio está principalmente en inglés por ahora. Las consultas y los correos se hacen en español, inglés y francés.",
+    "switcherShort": {
+      "en": "EN",
+      "fr": "FR",
+      "es": "ES"
+    }
+  },
+  "hero": {
+    "eyebrow": "Práctica holística, cuerpo-mente · Ginebra",
+    "tagline": "La sanación ocurre al ritmo de la seguridad."
+  }
+}
