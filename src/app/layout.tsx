@@ -23,22 +23,26 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.thehealinggroundgeneva.com"),
   title: {
-    default: "The Healing Ground Geneva | Holistic, Mind-Body Practice",
+    default:
+      "The Healing Ground Geneva — Holistic Practitioner, Naturopathic & Mind-Body",
     template: "%s | The Healing Ground Geneva"
   },
   description:
-    "A grounded, holistic mind-body practice in Geneva for stress, burnout, nervous-system regulation, and persistent stress-related symptoms.",
+    "Holistic, naturopathic, and mind-body practice in Geneva. Consultations with Celia de Mestral in English, French, and Spanish — in person and online.",
   icons: {
     icon: "/favicon.svg"
   },
   openGraph: {
     title: "The Healing Ground Geneva",
     description:
-      "Healing happens at the pace of safety. A grounded, mind-body practice in Geneva — English, French, Spanish.",
+      "Healing happens at the pace of safety. Holistic, naturopathic, and mind-body practice in Geneva — English, French, Spanish.",
     url: "https://www.thehealinggroundgeneva.com",
     siteName: "The Healing Ground Geneva",
     locale: "en_GB",
     type: "website"
+  },
+  twitter: {
+    card: "summary_large_image"
   }
 };
 
